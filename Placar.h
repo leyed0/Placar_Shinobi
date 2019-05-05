@@ -137,6 +137,7 @@ namespace PlacarShinobi {
 			// 
 			// Time_A_GroupBox
 			// 
+			this->Time_A_GroupBox->BackColor = System::Drawing::SystemColors::Control;
 			this->Time_A_GroupBox->ContextMenuStrip = this->contextMenuStrip1;
 			this->Time_A_GroupBox->Controls->Add(this->LBL_TA_Erros);
 			this->Time_A_GroupBox->Controls->Add(this->LBL_TA_Acertos);

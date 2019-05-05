@@ -134,12 +134,28 @@ System::Void PlacarShinobi::Placar::TesteToolStripMenuItem_Click(System::Object^
 	{
 		if(Input->Text != nullptr) Time_A_GroupBox->Text = Input->Text;
 		else Time_A_GroupBox->Text = "Time A";
+		if (Input->Text == "meninas" || Input->Text == "Meninas" || Input->Text == "MENINAS")
+			Time_A_GroupBox->BackColor = System::Drawing::Color::LightPink;
+		else if (Input->Text == "meninos" || Input->Text == "Meninos" || Input->Text == "MENINOS")
+			Time_A_GroupBox->BackColor = System::Drawing::Color::LightBlue;
+		else Time_A_GroupBox->BackColor = System::Drawing::Color::FromKnownColor(System::Drawing::KnownColor::Control);
 	}
 	Input = gcnew InputBox;
 	if (Input->Show("Time B: ") == System::Windows::Forms::DialogResult::OK)
 	{
 		if (Input->Text != nullptr) Time_B_GroupBox->Text = Input->Text;
 		else Time_B_GroupBox->Text = "Time B";
+		if (Input->Text == "meninas" || Input->Text == "Meninas" || Input->Text == "MENINAS")
+			Time_B_GroupBox->BackColor = System::Drawing::Color::LightPink;
+		else if (Input->Text == "meninos" || Input->Text == "Meninos" || Input->Text == "MENINOS")
+			Time_B_GroupBox->BackColor = System::Drawing::Color::LightBlue;
+		else Time_B_GroupBox->BackColor = System::Drawing::Color::FromKnownColor(System::Drawing::KnownColor::Control);
 	}
+
+
+	if(Input->Text == "meninas" || Input->Text == "Meninas" || Input->Text == "MENINAS")
+	if (Input->Text == "meninos" || Input->Text == "Meninos" || Input->Text == "MENINOS")
+
+
 	return System::Void();
 }
